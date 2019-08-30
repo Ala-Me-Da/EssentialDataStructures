@@ -1,4 +1,4 @@
-### Linked Lists ### 
+# Linked Lists #
 
 A Linked List is a sequence of Node objects (not necessarily adjacent in memory), with each Node containing an element, and 
 a reference to the next node in the list. Node objects differ depending on the way a linked list is implemented, e.g., a Doubly 
