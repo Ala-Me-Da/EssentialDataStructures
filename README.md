@@ -1,5 +1,5 @@
-# EssentialDataStructures
-Repo of essential data structures implemented in various languages by Owner
+# Essential Data Structures Rep
+Repo of essential data structures implemented in various languages by the Owner. 
 
 | Data Structures  | Languages        |
 | ---------------  | ---------------  | 
