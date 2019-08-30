@@ -1,4 +1,4 @@
-# Essential Data Structures Rep
+# Essential Data Structures Repo
 Repo of essential data structures implemented in various languages by the Owner. Mostly used for self-study / reference. 
 
 | Data Structures  | Languages Implemented        |
