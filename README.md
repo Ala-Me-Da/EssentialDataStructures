@@ -1,8 +1,8 @@
 # EssentialDataStructures
 Repo of essential data structures implemented in various languages by Owner
 
-| Data Structures  | Languages
-| ---------------  | | ---------------  | 
+| Data Structures  | Languages        |
+| ---------------  | ---------------  | 
 | Linked Lists     | [C++](https://www.google.com), [Java](https://www.google.com), [Python](https://www.google.com) |
 | Trees & Tries    | [C++](https://www.google.com), [Java](https://www.google.com) |
 | Graphs           | [C++](https://www.google.com), [Java](https://www.google.com) |
