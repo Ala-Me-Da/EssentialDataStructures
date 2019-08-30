@@ -10,4 +10,3 @@ Repo of essential data structures implemented in various languages by Owner
 | Heaps            | 
 | Vectors          | 
 | Hash Tables      | 
-| ---------------  | 
