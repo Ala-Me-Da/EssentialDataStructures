@@ -1,7 +1,7 @@
 # Essential Data Structures Rep
-Repo of essential data structures implemented in various languages by the Owner. 
+Repo of essential data structures implemented in various languages by the Owner. Mostly used for self-study / reference. 
 
-| Data Structures  | Languages        |
+| Data Structures  | Languages Implemented        |
 | ---------------  | ---------------  | 
 | Linked Lists     | [C++](https://www.google.com), [Java](https://www.google.com), [Python](https://www.google.com) |
 | Trees & Tries    | [C++](https://www.google.com), [Java](https://www.google.com) |
