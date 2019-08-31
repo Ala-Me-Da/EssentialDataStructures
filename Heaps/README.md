@@ -3,20 +3,20 @@
 Binary Heaps (a type of Priority Queue) are complete binary trees maintaining a heap-order property. 
 
 There are two main heap-order properties: 
-..* Parent node value <  Child node value (Minimum Heap) 
-..* Parent node value >  Child node value (Maximum Heap). 
+* Parent node value <  Child node value (Minimum Heap) 
+* Parent node value >  Child node value (Maximum Heap). 
 
 Binary Heaps store minimum or maximum values in the root of the tree, i.e. the first element in a array. Binary Heaps often follow the array Binary Tree scheme, with the following rules for parent, left child, and right child nodes for an array called "heap" with index i : 
 
- ..* Parent Node: 
+ * Parent Node: 
  ``` Java 
  heap[(i - 1) / 2] 
  ```
- ..* Left Child Node: 
+ * Left Child Node: 
  ```Java 
  heap[2*i - 1] 
  ```
- ..* Right Child: 
+ * Right Child: 
  ```Java 
  heap[2*i - 2]
 ```
