@@ -6,6 +6,7 @@ root.
 ## Tree Terminology & Definitions ## 
 
 **root**: 
+
 **edge**: 
 **child**: 
 **parent**: 
