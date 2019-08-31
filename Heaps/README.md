@@ -6,7 +6,7 @@ There are two main heap-order properties:
 * Parent node value <  Child node value (Minimum Heap) 
 * Parent node value >  Child node value (Maximum Heap). 
 
-Binary Heaps store minimum or maximum values in the root of the tree, i.e. the first element in a array. Binary Heaps often follow the array Binary Tree scheme, with the following rules for parent, left child, and right child nodes for an array called "heap" with index i : 
+Binary Heaps store minimum or maximum values in the root of the tree, i.e. the first element in an array. Binary Heaps often are implemented with an array, so the indices for identifying parent and child nodes follow these formulas: 
 
  * Parent Node: 
  ``` Java 
