@@ -1,6 +1,18 @@
 # Binary Tree #
 A Binary Tree is a tree where a parent node holds at most 2 child nodes. A node in the Binary Tree structure consists of an element, a reference to a left child node, and a reference to a right child node. 
 
+
+## Big - O Runtimes ## 
+Assuming the Binary Tree is of size N, the runtimes for each Binary Tree operation is as
+follows: 
+
+|Big - O  | Insert    | Remove | Find | 
+|---------| --------  | ------ | -----|
+| Worst   |  O(1)     |  O(N)  | O(N) |
+| Average |  O(1)     |  O(N)  | O(N) | 
+
+So, the Binary Tree offers approximatey the same runtime as using a regular old array object. 
+
 ## Node Implementations ## 
 
 Here a few ways to represent nodes in: Java, C++
@@ -29,14 +41,3 @@ struct Node {
      Node(const Object & elem) : element(elem) {}  
 }; 
 ```
-
-## Big - O Runtimes ## 
-Assuming the Binary Tree is of size N, the runtimes for each Binary Tree operation is as
-follows: 
-
-|Big - O  | Insert    | Remove | Find | 
-|---------| --------  | ------ | -----|
-| Worst   |  O(1)     |  O(N)  | O(N) |
-| Average |  O(1)     |  O(N)  | O(N) | 
-
-So, the Binary Tree offers approximatey the same runtime as using a regular old array object. 
