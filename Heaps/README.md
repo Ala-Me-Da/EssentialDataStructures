@@ -10,15 +10,15 @@ Binary Heaps store minimum or maximum values in the root of the tree, i.e. the f
 
  * Parent Node: 
  ``` Java 
- heap[(i - 1) / 2] 
+ heap[(index - 1) / 2] 
  ```
  * Left Child Node: 
  ```Java 
- heap[2*i - 1] 
+ heap[2*index - 1] 
  ```
  * Right Child: 
  ```Java 
- heap[2*i - 2]
+ heap[2*index - 2]
 ```
 
 ## Big - O Runtimes ## 
