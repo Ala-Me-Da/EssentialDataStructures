@@ -26,7 +26,7 @@ struct Node {
      Object element; 
      Node * leftChildNode; 
      Node * rightChildNode; 
-     Node(
+     Node(const Object & elem) : element(elem) {}  
 }; 
 ```
 
