@@ -2,7 +2,7 @@
 
 A Linked List is a sequence of Node objects (not necessarily adjacent in memory), with each Node containing an element, and 
 a reference to the next node in the list. Node objects differ depending on the way a linked list is implemented, e.g., a Doubly 
-Linked List would contain a reference the next node and the previous node.
+Linked List's nodes would contain a reference the next node and the previous node.
 
 A head node marks the start of a list, and a tail mark the end of the list. 
 
