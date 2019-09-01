@@ -5,7 +5,7 @@ root.
 
 ## Tree Terminology & Definitions ## 
 
-**root**: The first, distinguised node in a tree. 
+**root**: The first node in a tree. 
 
 **edge**: A connection between two nodes in a tree (or graph).  
 
