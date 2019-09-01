@@ -47,5 +47,25 @@ public void postOrderTraversal(Node n) {
 ```
 
 ### Level-Order Traversal ###  
+```Java
+public void levelOrderTraversal() {
+      Queue<Node> queue = new LinkedList<Node>();
+      queue.add(root);
+      while(queue.peek() != null) {
+            Node currentNode = queue.poll();
+            if(currentNode != null) {
+                        System.out.println(currentNode.item);
 
+                        if(currentNode.left != null) {
+                              // Add left node to be dequeued for processing later.
+                              queue.add(currentNode.left);
+                        }
 
+                        if(currentNode.right != null) {
+                              // Add right node to be dequeued for processing later.
+                              queue.add(currentNode.right);
+                        }
+            }
+      }
+} 
+```
