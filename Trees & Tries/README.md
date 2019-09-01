@@ -5,19 +5,29 @@ root.
 
 ## Tree Terminology & Definitions ## 
 
-**root**: 
+**root**: The first, distinguised node in a tree. 
 
-**edge**: 
-**child**: 
-**parent**: 
-**leaves**: 
-**siblings**: 
-**path**: 
-**length**: 
-**depth**: 
-**height**: 
-**ancestor**: 
-**descendant**: 
+**edge**: A connection between two nodes in a tree (or graph).  
+
+**child**: A node directly stemming from another node in a tree. 
+
+**parent**: A node sharing edges with a set of child nodes in a tree. 
+
+**leaves**: Nodes with no child nodes. 
+
+**siblings**: Nodes with the same parent node. 
+
+**path**: A sequence of nodes connecting a node (N1) with another node in a tree. 
+
+**length**: The number of edges between two nodes that have a path. 
+
+**depth**: The length of unique path between the root and a given node in a tree.
+
+**height**: The height of a node, called n, is the legnth between the longest path from n to a leaf. 
+
+**ancestor**: If there is a path between a node n1 and another node n2, then n1 is an ancestor of n2. 
+
+**descendant**: Following the definition of an ancestor, n2 would be the descendant of n1. 
 
 ## Traversal Methods ## 
 
