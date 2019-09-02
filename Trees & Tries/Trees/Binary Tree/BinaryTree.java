@@ -1,5 +1,7 @@
 import java.util.ArrayList; 
-import java.util.Collections; 
+import java.util.Collections;
+import java.util.Queue;
+import java.util.LinkedList;
 
 class BinaryTree<E> {
 	class Node {
@@ -57,9 +59,9 @@ class BinaryTree<E> {
 			return node;
 	}
 
-	public void find(E item) {
-
-
+	public E find(E item) {
+			find(current, item);
+			return (found != null) ? found.item : null;
 	}
 
 	private void find(Node node, E item) {
@@ -75,7 +77,10 @@ class BinaryTree<E> {
 
 
 	public void displayTree() {
+		System.out.println("In-Order Traversal");
 		displayTree(current);
+		System.out.println("Level-Order Traversal");
+		displayTreeLevelOrder();
 	}
 
 	/** In-Order Traversal of the Binary Tree to display contents. */
@@ -87,6 +92,28 @@ class BinaryTree<E> {
 		}
 	}
 
+	/** Level-Order Traversal of Binary Tree. */ 
+	public void displayTreeLevelOrder() {
+		Queue<Node> queue = new LinkedList<Node>();
+		queue.add(current);
+		while(queue.peek() != null) {
+			Node currentNode = queue.poll();
+			if(currentNode != null) {
+					System.out.println(currentNode.item);
+
+					if(currentNode.left != null) {
+						// Add left node to be dequeued for processing later.
+						queue.add(currentNode.left);
+					}
+
+					if(currentNode.right != null) {
+						// Add right node to be dequeued for processing later.
+						queue.add(currentNode.right);
+					}
+			}
+		}
+	} 
+
 	public static void main(String[] args) {
 		BinaryTree<String> b = new BinaryTree<String>();
 		b.insert("a");
@@ -95,17 +122,29 @@ class BinaryTree<E> {
 		b.insert("d");
 		b.insert("e");
 
-		//b.displayTree();
+		/*
+		b.displayTree();
 		b.remove("a");
 		b.remove("b");
 		b.remove("c");
 		b.remove("d");
 		b.remove("e");
+		*/
 
-		b.insert("i");
+		b.insert("a");
+		b.insert("b");
 		b.insert("c");
-		b.insert("u");
+		b.insert("d");
+		b.insert("e");
+		b.insert("a");
+		b.insert("b");
+		b.insert("c");
+		b.insert("d");
+		b.insert("e");
+		b.insert("f");
 
 		b.displayTree();
+
+		System.out.println(b.find("f"));
 	}
 } 
