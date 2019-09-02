@@ -8,7 +8,7 @@ Repo of essential data structures implemented in various languages by the Owner.
 | Binary Tree      | [Java](https://github.com/Ala-Me-Da/EssentialDataStructures/blob/master/Trees%20%26%20Tries/Trees/Binary%20Tree/BinaryTree.java) |
 | Graph            | In-Progress |
 | Stack            | [C++](https://github.com/Ala-Me-Da/EssentialDataStructures/blob/master/Stacks%20%26%20Queues/Stacks/Stack.cpp), [Java](https://github.com/Ala-Me-Da/EssentialDataStructures/blob/master/Stacks%20%26%20Queues/Stacks/Stack.java) |
-| Queue            | [C++](https://www.google.com), [Java](https://www.google.com)|  
-| Heaps            | [C++](https://www.google.com), [Java](https://www.google.com) |
+| Queue            | [C++](https://github.com/Ala-Me-Da/EssentialDataStructures/blob/master/Stacks%20%26%20Queues/Queues/Queue.cpp), [Java](https://github.com/Ala-Me-Da/EssentialDataStructures/blob/master/Stacks%20%26%20Queues/Queues/Queue.java)|  
+| Min Heap         | [Java](https://github.com/Ala-Me-Da/EssentialDataStructures/blob/master/Heaps/MinHeap.java) |
 | Vectors          | In-Progress |
 | Hash Tables      | In-Progress |
