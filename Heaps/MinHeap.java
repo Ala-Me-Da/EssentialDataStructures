@@ -78,7 +78,6 @@ public class MinHeap {
 	 * Essential Percolate Down (or Bubble Down) method
 	 * in order to maintain the heap order property
 	 * after deletion of the minimum (a.k.a, the poll method).
-	 *  BUG FOUND: The last swap results in errors. Investigate this tommorrow.
 	 */
 	private void percolateDown() {
 		int lastParentNode = (index - 1) / 2;
