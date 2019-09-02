@@ -1,13 +1,14 @@
 # Essential Data Structures Repo
 Repo of essential data structures implemented in various languages by the Owner. Mostly used for self-study / reference. 
-Under (re)construction...
+
 
 | Data Structures  | Languages Implemented        |
 | ---------------  | ---------------  | 
 | Linked Lists     | [C++](https://github.com/Ala-Me-Da/EssentialDataStructures/blob/master/Lists/doublyList.cpp), [Java](https://github.com/Ala-Me-Da/EssentialDataStructures/blob/master/Lists/LinkedList.java)|
-| Trees & Tries    | [C++](https://www.google.com), [Java](https://www.google.com) |
-| Graphs           | [C++](https://www.google.com), [Java](https://www.google.com) |
-| Stacks & Queues  | [C++](https://www.google.com), [Java](https://www.google.com) |
+| Binary Tree      | [Java](https://github.com/Ala-Me-Da/EssentialDataStructures/blob/master/Trees%20%26%20Tries/Trees/Binary%20Tree/BinaryTree.java) |
+| Graph            | In-Progress |
+| Stack            | [C++](https://www.google.com), [Java](https://github.com/Ala-Me-Da/EssentialDataStructures/blob/master/Stacks%20%26%20Queues/Stacks/Stack.java) |
+| Queue            | [C++](https://www.google.com), [Java](https://www.google.com)|  
 | Heaps            | [C++](https://www.google.com), [Java](https://www.google.com) |
-| Vectors          |  |
+| Vectors          | In-Progress |
 | Hash Tables      | In-Progress |
