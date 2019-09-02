@@ -87,15 +87,15 @@ class Stack<E> {
 
 	public static void main(String[] args) {
 		Stack<String> stack = new Stack<String>(); 
-		stack.push("Carrot"); 
-		stack.push("has"); 
-		stack.push("sexy");
-		stack.push("curves"); 
+		stack.push("Carrots"); 
+		stack.push("have"); 
+		stack.push("nutritional");
+		stack.push("value"); 
 		stack.display(); 
 		
 		int index = stack.search("Carrot"); 
 		System.out.println("The String object Carrot is found at index: " + index); 
-		System.out.println("The String object sexy is found at index:  " + stack.search("sexy")); 
+		System.out.println("The String object nutritional is found at index:  " + stack.search("nutritional")); 
 		System.out.println(""); 
 
 		stack.pop(); 
