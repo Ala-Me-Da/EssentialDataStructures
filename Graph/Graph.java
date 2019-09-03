@@ -1,5 +1,9 @@
 import java.util.*;
 
+/** Simple / Naive implementation of a generic Graph data structure 
+ *  with a hard-coded example to display how vertices / edges are stored
+ *  in an adjacency list (using a Hash Map). 
+ */ 
 public class Graph<E> {
 
     class Node {
@@ -21,9 +25,6 @@ public class Graph<E> {
         mGraph = new HashMap<>();
     }
 
-    /** 
-     * Simple 
-     */ 
     public void buildGraph(String[] nodeNames,  E[] elements) {
         Map<String, Node> nodes = new HashMap<String, Node>();
         for(int i = 0; i < nodeNames.length; i++){
