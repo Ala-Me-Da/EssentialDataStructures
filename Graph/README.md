@@ -32,10 +32,16 @@ underlying un-directed graph being connected.
 
 **Sparse**: Graph where there a small amount of edges relative to vertices. 
 
-**Adjacency List**: A list containing all adjacent vertices for each vertex. 
-
-**Adjacency Matrix**: Typically, A boolean matrix (2-D array) whose rows and columns are the vertices of a graph, and whose 
+**Adjacency List**: A list containing all adjacent vertices for each vertex. Best used when a graph is **Sparse**.  
+**Adjacency Matrix** A matrix (2D-array, table, etc) containing 
+**Incident Matrix**: Typically, A boolean matrix (2-D array) whose rows and columns are the vertices of a graph, and whose 
 entries are true or false depending on if the entry's vertices are connected with an edge.   
 
 
 ## Big-O Runtimes ## 
+For an adjacency list. V = total number of vertices in graph, E = total number of edges in graph. 
+
+|Big - O  | Insert Vertex or Edge   | Remove Vertex | Remove Edge | Adjacency | 
+|---------| ------------------------| ------------- | ------------| ----------| 
+| Worst   |  O(1)                   |  O(V)         | O(E)        | O(V)      | 
+ 
