@@ -13,4 +13,13 @@ class TrieNode {
 } 
 ```
 ## Big - O Runtime Analysis ## 
+Let K be the length of a word / string. 
+
+|Big - O  | Insert    |  Prefix Lookup   | 
+|---------| --------  | ---------------- |
+| Worst   |  O(K)     |   O(K)           |
+
+Note that these runtimes are the same as a Hash Table's lookup  ( O(1) ) as the strings are small and quickly processed, giving essentially constant time. A trie outranks a hash table in this case, as a trie can quickly lookup a prefix of a valid word whereas a hash can only lookup a valid word in its entirety.  
+
+
 
