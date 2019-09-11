@@ -37,14 +37,9 @@ public class Trie {
 	/**
 	 * Insert extra words into the Trie.
 	 * @param word - String representation to insert into Trie.
+	 * Assumes word is a brand new word with no prefixes in the Trie. 
 	 */
 	public void insert(String word) {
-		String pattern = "[a-zA-Z]";
-		if(!word.matches(pattern)) {
-			System.err.println("Error: Not a word. Use only English letters a - z.");
-			return;
-		}
-
 		TrieNode currentNode = root;
 		word = word.toUpperCase();
 		for(char c : word.toCharArray()) {
