@@ -6,7 +6,7 @@ Repo of essential data structures implemented in various languages by the Owner.
 | ---------------  | ---------------  | 
 | Linked Lists     | [C++](https://github.com/Ala-Me-Da/EssentialDataStructures/blob/master/Lists/doublyList.cpp), [Java](https://github.com/Ala-Me-Da/EssentialDataStructures/blob/master/Lists/LinkedList.java)|
 | Binary Tree      | [Java](https://github.com/Ala-Me-Da/EssentialDataStructures/blob/master/Trees%20%26%20Tries/Trees/Binary%20Tree/BinaryTree.java) |
-| BSTs             | In-Progress |
+| BSTs             | [Java](https://github.com/Ala-Me-Da/EssentialDataStructures/blob/master/Trees%20%26%20Tries/Trees/BSTs/BinarySearchTree.java) |
 | Trie             | [Java](https://github.com/Ala-Me-Da/EssentialDataStructures/blob/master/Trees%20%26%20Tries/Tries/Trie.java) |
 | Graph            | [Java](https://github.com/Ala-Me-Da/EssentialDataStructures/blob/master/Graph/Graph.java)|
 | Stack            | [C++](https://github.com/Ala-Me-Da/EssentialDataStructures/blob/master/Stacks%20%26%20Queues/Stacks/Stack.cpp), [Java](https://github.com/Ala-Me-Da/EssentialDataStructures/blob/master/Stacks%20%26%20Queues/Stacks/Stack.java) |
