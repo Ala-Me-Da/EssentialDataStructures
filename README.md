@@ -13,4 +13,4 @@ Repo of essential data structures implemented in various languages by the Owner.
 | Queue            | [C++](https://github.com/Ala-Me-Da/EssentialDataStructures/blob/master/Stacks%20%26%20Queues/Queues/Queue.cpp), [Java](https://github.com/Ala-Me-Da/EssentialDataStructures/blob/master/Stacks%20%26%20Queues/Queues/Queue.java)|  
 | Min Heap         | [Java](https://github.com/Ala-Me-Da/EssentialDataStructures/blob/master/Heaps/MinHeap.java) |
 | Vectors          | [Java](https://github.com/Ala-Me-Da/EssentialDataStructures/blob/master/Vector/Vector.java) |
-| Hash Tables      | In-Progress |
+| Hash Tables      | [Java](https://github.com/Ala-Me-Da/EssentialDataStructures/tree/master/Hash%20Tables)|
