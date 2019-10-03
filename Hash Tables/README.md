@@ -10,7 +10,7 @@ Separate Chaining implements a hash table as an array of lists, where two keys t
 
 ## Open Addressing ## 
 Open addressing implements a hash table as a standard resizable array, with special collision resolution functions of the form 
-```h(x) = (hash(x) + f(i) mod TableSize```
+```h(x) = (hash(x) + f(i)) mod TableSize```
 
 ### Linear Probing ### 
 
