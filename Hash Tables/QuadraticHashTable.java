@@ -13,6 +13,12 @@ class QuadraticHashTable<E> {
             size = 0;
         }
 
+        public QuadraticHashTable(int intialCapacity) {
+            hashTable = new Object[nextPrime(intialCapacity)];
+            tableSize = hashTable.length;
+            size = 0;
+        }
+
         public void insert(E item) {
             if(loadFactor >= REHASH_THRESHOLD)
                 rehash();
@@ -36,12 +42,10 @@ class QuadraticHashTable<E> {
 
         public boolean contains(E item) {
             int hashKey = hashcode(item);
-            if(item.equals(hashTable[hashKey])) {
-                return true;
-            } else if(item.equals(hashTable[collisionResolver(hashKey)])) {
-                return true;
-            }
-            return false;
+            int probedCell = findPosition(hashKey, item);
+            boolean isAtHashKeyCell = item.equals(hashTable[hashKey]);
+            boolean isAtProbedCell = item.equals(hashTable[probedCell]);
+            return (isAtHashKeyCell || isAtProbedCell) ? true : false;
         }
 
         private int hashcode(E item) {
@@ -63,6 +67,17 @@ class QuadraticHashTable<E> {
             while(hashTable[probeIndex] != null) {
                 probeIndex = (probeIndex != tableSize - 1) ? ++probeIndex : 0;
             }
+            return probeIndex;
+        }
+
+        private int findPosition(int i, E item) {
+            int probeIndex = (i + i*i) % tableSize;
+            while(hashTable[probeIndex] == null)  {
+                probeIndex = (probeIndex != tableSize - 1) ? ++probeIndex : 0;
+                if(item.equals(hashTable[probeIndex]))
+                    return probeIndex;
+            }
+
             return probeIndex;
         }
 

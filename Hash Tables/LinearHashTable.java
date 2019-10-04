@@ -1,4 +1,4 @@
-@SuppressWarnings("unchecked")
+@SuppressWarnings("Unchecked")
 class LinearHashTable<E> {
 	private static final double REHASH_THRESHOLD = 0.50; // Results in only 2.5 PROBES during collisions on average.
 	private static final int INIT_TABLE_SIZE = 101;
@@ -12,6 +12,12 @@ class LinearHashTable<E> {
 		tableSize = hashTable.length;
 		size = 0;
 	} 
+
+	public LinearHashTable(int intialCapacity) {
+		hashTable = new Object[nextPrime(intialCapacity)];
+		tableSize = hashTable.length;
+		size = 0;
+	}
 
 	public void insert(E item) {
 		if(loadFactor >= REHASH_THRESHOLD) 
@@ -32,11 +38,14 @@ class LinearHashTable<E> {
 		}
 		hashTable[hashKey] = null;
 		loadFactor = (--size) / (double)(tableSize);
-	} 
+	}
 
 	public boolean contains(E item) {
 		int hashKey = hashcode(item);
-		return hashTable[hashKey] == item ? true : false;
+		int probedCell = findPosition(hashKey, item);
+		boolean isAtHashKeyCell = item.equals(hashTable[hashKey]);
+		boolean isAtProbedCell = item.equals(hashTable[probedCell]);
+		return (isAtHashKeyCell || isAtProbedCell) ? true : false;
 	} 
 
 	private int hashcode(E item) {
@@ -54,10 +63,19 @@ class LinearHashTable<E> {
 
 	private int collisionResolver(int i) {
 		while(hashTable[i] != null) {
-			i = (++i) % tableSize;
+			i = (i != tableSize - 1) ? ( ++i % tableSize )  :  0 ;
 		}
-		return i; 
-	} 
+		return i;
+	}
+
+	private int findPosition(int i, E item) {
+		while(hashTable[i] == null) {
+			i = (i != tableSize - 1) ? ( ++i % tableSize )  :  0 ;
+			if(item.equals(hashTable[i]))
+				return i;
+		}
+		return i;
+	}
 
 	private void rehash() {
 		Object[] newTable = new Object[nextPrime(tableSize)];
@@ -108,8 +126,9 @@ class LinearHashTable<E> {
 	 * Tester method to display the contents of the hash table
 	 */
 	public void displayTable() {
+		int count = 0;
 		for(Object item : hashTable) {
-			System.out.println(item);
+			System.out.println("Count: " + count++ + " Item: " + item);
 		}
 	}
 } 

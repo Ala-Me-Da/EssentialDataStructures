@@ -14,6 +14,12 @@ class DoubleHashTable<E> {
         size = 0;
     }
 
+    public DoubleHashTable(int intialCapacity) {
+        hashTable = new Object[nextPrime(intialCapacity)];
+        tableSize = hashTable.length;
+        size = 0;
+    }
+
     public void insert(E item) {
         if(loadFactor >= REHASH_THRESHOLD)
             rehash();
