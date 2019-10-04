@@ -43,5 +43,9 @@ Double hash probing, as the name suggests, uses a second hash function in its co
 
 ## Big - O Runtime ##
 
-Assuming a good hash function that distributes keys among the buckets evenly, the runtimes for hash tables are listed below:
+Assuming a good hash function that distributes keys among the buckets evenly, and a table size of N, the runtimes for hash tables are listed below:
 
+|Big - O  | Insert    | Remove | Find | 
+|---------| --------  | ------ | -----|
+| Worst   |  ```O(N)```     |  ```O(N)``` | ```O(N)``` |
+| Average |  ```O(1)```     |  ```O(1)```  | ```O(1)``` | 
