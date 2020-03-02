@@ -1,5 +1,5 @@
 # Essential Data Structures Repo
-Repo of essential data structures implemented in various languages by the Owner. Mostly used for self-study / reference. 
+Repo of essential data structures implemented in various languages by Ala-Me-Da. Mostly used for self-study / reference. 
 
 
 | Data Structures  | Languages Implemented        |
