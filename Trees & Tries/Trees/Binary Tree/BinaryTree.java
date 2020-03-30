@@ -122,14 +122,13 @@ class BinaryTree<E> {
 		b.insert("d");
 		b.insert("e");
 
-		/*
 		b.displayTree();
 		b.remove("a");
 		b.remove("b");
 		b.remove("c");
 		b.remove("d");
 		b.remove("e");
-		*/
+		
 
 		b.insert("a");
 		b.insert("b");
