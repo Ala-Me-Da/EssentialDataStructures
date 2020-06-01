@@ -12,5 +12,5 @@ Repo of essential data structures implemented in various languages by Ala-Me-Da.
 | Stack            | [C++](https://github.com/Ala-Me-Da/EssentialDataStructures/blob/master/Stacks%20%26%20Queues/Stacks/Stack.cpp), [Java](https://github.com/Ala-Me-Da/EssentialDataStructures/blob/master/Stacks%20%26%20Queues/Stacks/Stack.java) |
 | Queue            | [C++](https://github.com/Ala-Me-Da/EssentialDataStructures/blob/master/Stacks%20%26%20Queues/Queues/Queue.cpp), [Java](https://github.com/Ala-Me-Da/EssentialDataStructures/blob/master/Stacks%20%26%20Queues/Queues/Queue.java)|  
 | Min Heap         | [Java](https://github.com/Ala-Me-Da/EssentialDataStructures/blob/master/Heaps/MinHeap.java) | 
-| Vectors          | [Java](https://github.com/Ala-Me-Da/EssentialDataStructures/blob/master/Vector/Vector.java), [Python](https://github.com/Ala-Me-Da/EssentialDataStructures/blob/master/Vector/Vector.py) | 
+| Vectors          | [C++](https://github.com/Ala-Me-Da/EssentialDataStructures/blob/master/Vector/mVector.cpp), [Java](https://github.com/Ala-Me-Da/EssentialDataStructures/blob/master/Vector/Vector.java), [Python](https://github.com/Ala-Me-Da/EssentialDataStructures/blob/master/Vector/Vector.py) | 
 | Hash Tables      | [Java](https://github.com/Ala-Me-Da/EssentialDataStructures/tree/master/Hash%20Tables)|
